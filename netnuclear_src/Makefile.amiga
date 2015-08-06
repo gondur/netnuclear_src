@@ -1,0 +1,13 @@
+CC = gcc
+LIBS = -lSDL_mixer -lmikmod -lFLAC -lpthread -lvorbisfile -lvorbis -logg  -lsmpeg  -lSDL_net -lSDL -lauto
+CFLAGS = -O2 -ISDK:local/newlib/include/SDL -ISDK:local/common/include/SDL
+OBJS = main.o  gfx.o input.o commands.o sfx.o misc.o players.o ai.o terminal.o world.o net.o packets.o  constants.o
+LINK = g++ $(CFLAGS) -o $@
+
+all: nuclear
+
+nuclear: $(OBJS)
+	$(LINK) $(OBJS) $(LIBS)
+
+clean:
+	del *.o

@@ -1,0 +1,71 @@
+Version 4 (1 Feb 2010)
+------------------------------------------------------------------------------
+(*) Fixed a serious miss I made in Version 3, which had players start with
+    just one city instead of five, because I forgot to remove a setting I use
+    while I test the game code. STUPID!!!
+
+
+Version 3 (26 Jan 2010)
+------------------------------------------------------------------------------
+(*) Began adding high resolution graphics! Bitmaps for the font, the mouse
+    cursor and parts of the diplomacy terminal are now in high resolution.
+(*) Replaced the "Nuclear War" logo to say "NetNuclear" instead.
+(*) The AI now checks all opponents for any prepared missiles or bombers
+    before selecting to use a defense system.
+(*) Added the random welcome messages from the original game to be displayed
+    upon a new game start.
+(*) Computer opponents now "speak" random sentences when clicking on their
+    monitors and after attacking them, like in the original game.
+(*) Fixed a bug that would crash the program if a connected clients address
+    couldn't be resolved properly.
+(*) Fixed a bug which made bombers usable even though they had been shot down.
+(*) Fixed a bug that would potentially crash the program when closing the
+    server on some systems.
+(*) Receiving a chat message while on the world screen no longer interrupts
+    the currently playing sound effect.
+(*) Mouse cursor only drawn if the window has focus.
+(*) Adjusted the damage done by warheads to be more accurate.
+
+
+Version 2 (7 Jan 2010)
+------------------------------------------------------------------------------
+(*) Fixed a typo in the message displayed on a successful propaganda strike.
+    It said "Defectors leave A for B", when it should have been "B for A".
+(*) Fixed a bug (or miss) where population numbers didn't update after a
+    successful propaganda strike. This sometimes caused cities to display
+    negative population numbers, like -8, and also sometimes made it possible
+    to keep playing even after having been defeated.
+(*) Increased the screen resolution to 640x480 pixels. Previous was 640x400.
+(*) Minor cosmetic changes to the diplomacy terminal and world screen to match
+    the slightly higher screen resolution.
+(*) Population numbers now displayed in white colour (like in the original),
+    instead of yellow.
+(*) The hosting player now starts in the middle, so that the monitors will
+    correctly match the positions of the other players countries (like in the
+    original Nuclear War), when playing a single player game.
+(*) Added command "/clear" to clear (reset) the telegraph.
+(*) Added my e-mail and website address to be printed with the "/version"
+    command.
+(*) The telegraph now prints messages slightly faster.
+(*) Server port can now be specified (see readme for more information).
+(*) Fixed some minor typos and missing line breaks in messages.
+(*) Added missing leader portraits. The previous NetNuclear version had only
+    two portraits, but now has all ten from the original game.
+(*) Added the names of the world leaders from the original game, to be used
+    for computer opponents. A leaders name and his/her portrait is, for now,
+    randomly selected when a computer player is added (with "/add").
+(*) Scaled down bitmaps to half the size, not just to optimize disk space
+    usage, but also because it was unnecessary to store bitmaps as twice the
+    size instead of just having the program rescale them.
+(*) Balanced the volume of some sound effects, which were either too high or
+    too low.
+(*) Changing player name with "/name" now checks if the name is available and
+    not already in use by someone else.
+(*) Population numbers now hidden while the "door" is opening/closing, like
+    in the original game.
+(*) Rewrote some parts of the readme.
+
+
+Version 1 (20 Dec 2009)
+------------------------------------------------------------------------------
+(*) First version!
